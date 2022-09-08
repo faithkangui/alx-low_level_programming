@@ -4,7 +4,7 @@
  *   *                                                                                                                                                                          
  *    *Return: Always 0 (Success)                                                                                                                                                
  *     */                                                                                                                                                                         
-int main(int)  
+int main(void)
 {
 	char charType;
 	int intType;
