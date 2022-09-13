@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  *main - check the code.
@@ -8,12 +7,7 @@
 int main(void)
 {
 	int ch;
-
 	char str[] = "_putchar";
-	{
-		for (ch = 0; ch < strlen(str); ch++)
-			putchar(str[ch]);
-	}
-		putchar('\n');
-		return (0);
+	putchar(str[ch]);
+	return (0);
 }
