@@ -1,19 +1,19 @@
-#include <unistd.h>
-#include <string.h>
+#include "main.h"
 /**
- *main - entry point
+ *main - prints _putchar
  *
- *Return: Always 0.
+ * Return: Always 0
  */
-int main(void)
+int  main(void)
 {
 	int ch;
 
 	char str[] = "_putchar";
+
+	for (ch = 0; ch < 8; ch++)
 	{
-		for (ch = 0; ch <= strlen(str); ch++)
-			putchar(str[ch]);
+		_putchar(str[ch]);
 	}
-		putchar('\n');
-		return (0);
+	_putchar('\n');
+	return (0);
 }
