@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int _abs - computes the absolute valueee of an integer
+ * _abs - computes the absolute valueee of an integer
  *
- *@a: int
+ *@n: integer
  *
  * Return: int
  */
