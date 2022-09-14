@@ -6,7 +6,7 @@
  *
  * Return: int
  */
-int _abs(int a)
+int _abs(int)
 {
 	int n;
 	if (n > 0)
