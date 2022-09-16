@@ -3,7 +3,7 @@
 /**
  * fizz_buzz - print FizzBuzz
  *
- * Return: 0
+ * Return: void
  */
 void fizz_buzz(void)
 {
@@ -22,6 +22,7 @@ void fizz_buzz(void)
 			else
 				printf("%d", i);
 		}
-	printf(" ");
+	if (i != 100)
+		printf(" ");
 	}
 }
