@@ -21,6 +21,7 @@ void more_numbers(void)
 			else
 			{
 				int numbers[2] = {1, 2};
+
 				numbers[0] = i / 10;
 				numbers[1] = i % 10;
 
