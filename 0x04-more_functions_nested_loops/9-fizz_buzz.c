@@ -2,7 +2,7 @@
 /**
  * main - print FizzBuzz
  *
- * Return: void
+ * Return: int
  */
 int main(void)
 {
@@ -24,4 +24,6 @@ int main(void)
 	if (i != 100)
 		printf(" ");
 	}
+	printf("\n");
+	return (0);
 }
