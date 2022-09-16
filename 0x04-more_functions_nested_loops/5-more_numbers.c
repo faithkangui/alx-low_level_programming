@@ -8,6 +8,7 @@ void more_numbers(void)
 {
 	int n;
 	int i;
+	int x;
 
 	for (n = 0; n < 10; n++)
 	{
@@ -19,9 +20,11 @@ void more_numbers(void)
 			}
 			else
 			{
-				int numbers[] = {(i / 10), (i % 10)};
+				int numbers[2] = {1, 2};
+				numbers[0] = i / 10;
+				numbers[1] = i % 10;
 
-				for (int x = 0; x < 2; x++)
+				for (x = 0; x < 2; x++)
 				{
 					_putchar(numbers[x] + '0');
 				}
