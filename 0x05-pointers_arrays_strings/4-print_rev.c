@@ -18,21 +18,6 @@ int _strlen(char *s)
 }
 
 /**
- * _puts - print a string followed by new line
- * @str: char
- *
- * Return: void
- */
-void _puts(char *str)
-{
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-	_putchar(*(str + i));
-	_putchar('\n');
-}
-
-/**
  * print_rev - prints a string in reverse
  * @s: char
  *
@@ -42,25 +27,11 @@ void print_rev(char *s)
 {
 	int len;
 	int i;
-	char *start;
-	char *end;
-	char temp;
 
 	len = _strlen(s);
-	start = s;
-	end = s;
-
-	for (i = 0; i < len - 1; i++)
-	end++;
-	for (i = 0; i < len / 2; i++)
+	for (i = len - 1; i >= 0; i--)
 	{
-		temp = *end;
-		*end = *start;
-		*start = temp;
-
-		start++;
-		end--;
+		_putchar(*(s + i));
 	}
-
-	_puts(s);
+	_putchar('\n');
 }
