@@ -1,18 +1,35 @@
 #include "main.h"
 
 /**
- * str_len - return length
- * @ptr: pointer
+ * _strlen - return length
+ * @s: pointer
  *
  * Return: int
  */
-int str_len(char *ptr)
+int _strlen(char *s)
 {
-	int i = -1;
+	char *i = s;
 
-	while (*(ptr + i) != '\0')
-	i++;
-	return (i);
+	while (*i != '\0')
+	{
+		i++;
+	}
+	return (i - s);
+}
+
+/**
+ * _puts - print a string followed by new line
+ * @str: char
+ *
+ * Return: void
+ */
+void _puts(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	_putchar(*(str + i));
+	_putchar('\n');
 }
 
 /**
@@ -29,21 +46,21 @@ void print_rev(char *s)
 	char *end;
 	char temp;
 
-	len = str_len(s);
+	len = _strlen(s);
 	start = s;
 	end = s;
 
-	for (i = 0; i < len / 2; i++)
+	for (i = 0; i < len - 1; i++)
 	end++;
 	for (i = 0; i < len / 2; i++)
 	{
 		temp = *end;
 		*end = *start;
 		*start = temp;
-		
-		_putchar(*end);
 
 		start++;
 		end--;
 	}
+
+	_puts(s);
 }
