@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * str_len - return length
+ * _strlen - return length
  * @s: pointer
  *
  * Return: int
