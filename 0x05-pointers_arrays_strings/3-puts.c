@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 #include <string.h>
 /**
  * _puts - print a string followed by new line
