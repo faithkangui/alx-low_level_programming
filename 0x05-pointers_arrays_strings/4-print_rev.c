@@ -40,6 +40,8 @@ void print_rev(char *s)
 		temp = *end;
 		*end = *start;
 		*start = temp;
+		
+		_putchar(*end);
 
 		start++;
 		end--;
