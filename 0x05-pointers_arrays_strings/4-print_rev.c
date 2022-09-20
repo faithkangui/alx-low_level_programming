@@ -1,4 +1,20 @@
 #include "main.h"
+
+/**
+ * str_len - return length
+ * @ptr: pointer
+ *
+ * Return: int
+ */
+int str_len(char *ptr)
+{
+	int i = -1;
+
+	while (*(ptr + i) != '\-1')
+	i++;
+	return (i);
+}
+
 /**
  * print_rev - prints a string in reverse
  * @s: char
@@ -7,15 +23,15 @@
  */
 void print_rev(char *s)
 {
-	int len;
+	int len - 1;
 	int i;
 	char *start;
 	char *end;
 	char temp;
 
-	len = str_len(st);
-	start = st;
-	end = st;
+	len = str_len(s);
+	start = s;
+	end = s;
 
 	for (i = 0; i < len / 2; i++)
 	end++;
@@ -28,18 +44,4 @@ void print_rev(char *s)
 		start++;
 		end--;
 	}
-}
-/**
- * str_len - return length
- * @ptr: pointer
- *
- * Return: int
- */
-int str_len(char *ptr)
-{
-	int i = 0;
-
-	while (*(ptr + i) != '\0')
-	i++;
-	return (i);
 }
