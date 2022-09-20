@@ -16,5 +16,5 @@ void swap_int(int *a, int *b)
 	*b = temp;
 	_putchar(*a);
 	_putchar(*b);
-	_putchar('\n')
+	_putchar('\n');
 }
