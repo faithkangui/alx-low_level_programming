@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * swap_int - swaps the values of two integers
  * @a: integer int to be swaped
@@ -14,7 +13,4 @@ void swap_int(int *a, int *b)
 	temp = *a;
 	*a = *b;
 	*b = temp;
-	_putchar(*a);
-	_putchar(*b);
-	_putchar('\n');
 }
