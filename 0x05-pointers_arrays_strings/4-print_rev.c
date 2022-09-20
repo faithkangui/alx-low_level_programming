@@ -10,7 +10,7 @@ int str_len(char *ptr)
 {
 	int i = -1;
 
-	while (*(ptr + i) != '\-1')
+	while (*(ptr + i) != '\0')
 	i++;
 	return (i);
 }
@@ -23,7 +23,7 @@ int str_len(char *ptr)
  */
 void print_rev(char *s)
 {
-	int len - 1;
+	int len;
 	int i;
 	char *start;
 	char *end;
