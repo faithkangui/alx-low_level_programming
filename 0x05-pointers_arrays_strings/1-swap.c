@@ -9,12 +9,9 @@
  */
 void swap_int(int *a, int *b)
 {
-	int temp;
+	int a, int b = *p1 = &a, *p2 = &b;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
-	_putchar(*a);
-	_putchar(*b);
-	_putchar('\n');
+	*p1 = *p1 + *p2;
+	*p2 = *p1 - *p2;
+	*p1 = *p1 - *p2;
 }
