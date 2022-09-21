@@ -14,6 +14,7 @@ char *string_toupper(char *s)
 	while (*(s + i) != '\0')
 	{
 		int letter = *(s + i);
+
 		if (letter >= 'a' && letter <= 'z')
 		{
 			*(s + i) = *(s + i) - ('a' - 'A');
@@ -21,5 +22,5 @@ char *string_toupper(char *s)
 		i++;
 	}
 
-	return s;
+	return (s);
 }
