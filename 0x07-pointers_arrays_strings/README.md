@@ -1,0 +1,3 @@
+- Learning more about pointer to pointers or double pointer
+- learning about multi-dimensional arrays in c.
+- Two dimensional arrays are the most simplest form of multi-dimensional array. You declare, initialize and then access
