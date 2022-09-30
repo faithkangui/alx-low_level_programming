@@ -20,7 +20,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		else
 		{
 			mul = i * mul;
-			printf("%d", mul); 
+			printf("%d", mul);
 		}
 	}
 	return (0);
