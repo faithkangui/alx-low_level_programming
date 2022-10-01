@@ -17,7 +17,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		int j = atoi (*(argv + i));
+		int j = atoi(*(argv + i));
 
 		mul = j * mul;
 	}
