@@ -8,20 +8,19 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int i, mul = 0;
+	int i, mul = 1;
 
+	if (argc < 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	for (i = 1; i < argc; i++)
 	{
-		if (argc < 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			mul = i * mul;
-			printf("%d", mul);
-		}
+		int j = atoi (*(argv + i));
+
+		mul = j * mul;
 	}
+	printf("%d\n", mul);
 	return (0);
 }
